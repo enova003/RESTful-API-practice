@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Get and Post Requests</title>
+        <style>
+            div {
+                margin: 10px;
+                width: 400px;
+                border: 1px solid #16216f;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Get Requests</h1>
+            <form method="GET" action="{{ url_for('handle_get') }}">
+                <input type="text" name="username" placeholder="username">
+                <input type="password" name="password" placeholder="password">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div>
+            <h1>Post Requests</h1>
+            <form method="post" action="{{ url_for('handle_post') }}">
+                <input type="text" name="username" placeholder="username">
+                <input type="password" name="password" placeholder="password">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
